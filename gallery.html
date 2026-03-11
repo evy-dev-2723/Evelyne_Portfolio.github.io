@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gallery - Evelyne Filloi</title>
+
+    <style>
+        /* Additional gallery styling (won't break your CSS) */
+        .gallery-section {
+            padding: 40px 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .gallery-description {
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-links">
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a href="about.html"><i class="fas fa-user"></i>About Me</a>
+            <a href="skills.html"><i class="fas fa-code"></i>Skills</a>
+            <a href="projects.html"><i class="fas fa-laptop-code"></i>My Projects</a>
+            <a href="blog.html"><i class="fas fa-blog"></i>Blog</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
+            <a href="gallery.html"><i class="fas fa-image"></i>Gallery</a>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="page-title">My Gallery</h1>
+            <p class="page-subtitle">A glimpse into my journey through photos</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <main class="container">
+        <section class="gallery-section">
+            <h2 class="section-title">Photo Collection</h2>
+            <p>Here are some moments from my modeling, events, personal life, travel, and creative projects.</p>
+
+            <div class="gallery-grid">
+
+                <!-- 1 -->
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpeg" alt="Photo 1">
+                    <p class="gallery-description">A portrait taken during the rollerboard game</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpeg" alt="Photo 2">
+                    <p class="gallery-description">Gemini  transformation.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpeg" alt="Photo 3">
+                    <p class="gallery-description">A moment captured during my first time with the snow.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpeg" alt="Photo 4">
+                    <p class="gallery-description">Outdoor photoshoot with natural lighting with gemini.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpeg" alt="Photo 5">
+                    <p class="gallery-description">Fashion pose in the toilet.</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="gallery-item">
+                    <img src="images/gallery6.jpeg" alt="Photo 6">
+                    <p class="gallery-description">Elegant look during an award ceremony with Gemini.</p>
+                </div>
+
+                <!-- 7 -->
+                <div class="gallery-item">
+                    <img src="images/gallery7.jpeg" alt="Photo 7">
+                    <p class="gallery-description">Traditional outfit showcasing African culture.</p>
+                </div>
+
+                <!-- 8 -->
+                <div class="gallery-item">
+                    <img src="images/gallery8.jpeg" alt="Photo 8">
+                    <p class="gallery-description">A creative makeup photoshoot session.</p>
+                </div>
+
+                <!-- 9 -->
+                <div class="gallery-item">
+                    <img src="images/gallery9.jpeg" alt="Photo 9">
+                    <p class="gallery-description">Smile of confidence at a fashion runway.</p>
+                </div>
+
+                <!-- 10 -->
+                <div class="gallery-item">
+                    <img src="images/gallery10.jpeg" alt="Photo 10">
+                    <p class="gallery-description">Natural beauty captured on my birthday.</p>
+                </div>
+
+                <!-- 11 -->
+                <div class="gallery-item">
+                    <img src="images/gallery11.jpeg" alt="Photo 11">
+                    <p class="gallery-description">Moment of gratitude during an event.</p>
+                </div>
+
+                <!-- 12 -->
+                <div class="gallery-item">
+                    <img src="images/gallery12.jpeg" alt="Photo 12">
+                    <p class="gallery-description">Simple portrait with warm tones.</p>
+                </div>
+
+                <!-- 13 -->
+                <div class="gallery-item">
+                    <img src="images/gallery13.jpeg" alt="Photo 13">
+                    <p class="gallery-description">Elegant fashion photography moment.</p>
+                </div>
+
+                <!-- 14 -->
+                <div class="gallery-item">
+                    <img src="images/gallery14.jpeg" alt="Photo 14">
+                    <p class="gallery-description">Creative angle capturing a candid moment.</p>
+                </div>
+
+                <!-- 15 -->
+                <div class="gallery-item">
+                    <img src="images/gallery15.jpeg" alt="Photo 15">
+                    <p class="gallery-description">Traditional African outfit photoshoot.</p>
+                </div>
+
+                <!-- 16 -->
+                <div class="gallery-item">
+                    <img src="images/gallery16.jpeg" alt="Photo 16">
+                    <p class="gallery-description">Minimalist and elegant portrait shot.</p>
+                </div>
+
+                <!-- 17 -->
+                <div class="gallery-item">
+                    <img src="images/gallery17.jpeg" alt="Photo 17">
+                    <p class="gallery-description">Behind the scenes during a reading time.</p>
+                </div>
+
+                <!-- 18 -->
+                <div class="gallery-item">
+                    <img src="images/gallery18.jpeg" alt="Photo 18">
+                    <p class="gallery-description">Moment in an African Bar.</p>
+                </div>
+
+                <!-- 19 -->
+                <div class="gallery-item">
+                    <img src="images/gallery19.jpeg" alt="Photo 19">
+                    <p class="gallery-description">Pose Elegant .</p>
+                </div>
+
+                <!-- 20 -->
+                <div class="gallery-item">
+                    <img src="images/gallery20.jpeg" alt="Photo 20">
+                    <p class="gallery-description">My favorite Book.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">© 2026 Evelyne Filloi. All rights reserved.</p>
+    </footer>
+    <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

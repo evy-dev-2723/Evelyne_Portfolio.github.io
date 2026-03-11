@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clean Code & Naming Conventions - Evelyne Filloi</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+       <div class="menu-links">
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a href="about.html"><i class="fas fa-user"></i>About Me</a>
+            <a href="skills.html"><i class="fas fa-code"></i>Skills</a>
+            <a href="projects.html"><i class="fas fa-laptop-code"></i>My Projects</a>
+            <a href="blog.html"><i class="fas fa-blog"></i>Blog</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
+            <a href="gallery.html"><i class="fas fa-image"></i>Gallery</a>
+        </div>
+    </div>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="page-title">Clean Code & Naming Conventions</h1>
+            <p class="page-subtitle">Writing code that humans can understand</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <article class="blog-article">
+            <div class="blog-meta">
+                <span class="blog-date"><i class="far fa-calendar"></i> February 19, 2026</span>
+                <span class="blog-read-time"><i class="far fa-clock"></i> 6 min read</span>
+            </div>
+
+            <div class="blog-content">
+                <p>Clean code isn't about writing less — it's about writing clearly. In the early days of my programming journey, I focused on making code work. Now I understand that making code readable and maintainable is equally important.</p>
+
+                <h2>Why Clean Code Matters</h2>
+                <p>Clean code is code that is easy to read, understand, and maintain. It's not just for you — it's for the developers who will work on your code after you, including your future self.</p>
+
+                <p>When code is clean, it:</p>
+                <ul>
+                    <li>Reduces bugs and errors</li>
+                    <li>Speeds up development and debugging</li>
+                    <li>Makes collaboration smoother</li>
+                    <li>Eases onboarding of new team members</li>
+                    <li>Saves time and mental energy</li>
+                </ul>
+
+                <div class="quote">
+                    <p>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - Martin Fowler</p>
+                </div>
+
+                <h2>The Principles of Clean Code</h2>
+
+                <h3>1. Meaningful Variable Names</h3>
+                <p>Variables should reveal their purpose. Compare:</p>
+                
+                <div class="code-example">
+                    <p><strong>Bad:</strong> <code>int a; String n;</code></p>
+                    <p><strong>Good:</strong> <code>int userAge; String userName;</code></p>
+                </div>
+
+                <h3>2. Small, Focused Functions</h3>
+                <p>Each function should do one thing and do it well:</p>
+                
+                <div class="code-example">
+                    <p><strong>Bad:</strong> <code>function processUserDataAndSendEmail() {}</code></p>
+                    <p><strong>Good:</strong> <code>function validateUserData() {}</code><br>
+                    <code>function sendWelcomeEmail() {}</code></p>
+                </div>
+
+                <h3>3. Consistent Formatting</h3>
+                <p>Use consistent indentation, spacing, and structure throughout your codebase.</p>
+
+                <h3>4. Comments Only Where Necessary</h3>
+                <p>Good code should explain itself through clear naming and structure.</p>
+
+                <div class="code-example">
+                    <p><strong>Bad:</strong> <code>// Check if user is adult<br>if (age > 18) {</code></p>
+                    <p><strong>Good:</strong> <code>if (userIsAdult) {</code></p>
+                </div>
+
+                <h3>5. Avoid Repetition (DRY Principle)</h3>
+                <p>Don't Repeat Yourself - extract repeated code into functions or classes.</p>
+
+                <h2>Naming Conventions That Make a Difference</h2>
+                
+                <h3>Variables and Functions</h3>
+                <ul>
+                    <li>Use descriptive names that explain purpose</li>
+                    <li>Use camelCase for variables and functions</li>
+                    <li>Use PascalCase for classes</li>
+                    <li>Use UPPER_CASE for constants</li>
+                </ul>
+
+                <h3>Boolean Variables</h3>
+                <div class="code-example">
+                    <p><strong>Bad:</strong> <code>boolean flag; boolean status;</code></p>
+                    <p><strong>Good:</strong> <code>boolean isActive; boolean hasPermission;</code></p>
+                </div>
+
+                <h3>Function Names</h3>
+                <p>Functions should be verbs that describe what they do:</p>
+                <div class="code-example">
+                    <p><strong>Bad:</strong> <code>function data() {}</code></p>
+                    <p><strong>Good:</strong> <code>function calculateTotal() {}</code><br>
+                    <code>function validateInput() {}</code></p>
+                </div>
+
+                <h2>Benefits of Clean Code</h2>
+                <ul>
+                    <li><strong>Easier debugging:</strong> When code is clean, finding and fixing bugs is much simpler</li>
+                    <li><strong>Better collaboration:</strong> Team members can understand and work with your code easily</li>
+                    <li><strong>Faster development:</strong> You spend less time figuring out what the code does</li>
+                    <li><strong>Scalability:</strong> Clean code is easier to extend and modify</li>
+                    <li><strong>Reduced technical debt:</strong> Clean code requires less maintenance over time</li>
+                </ul>
+
+                <h2>My Personal Clean Code Checklist</h2>
+                <p>Before I consider code "done," I ask myself:</p>
+                <ul>
+                    <li>Are variable and function names descriptive?</li>
+                    <li>Are functions small and focused on one task?</li>
+                    <li>Is the code properly formatted and indented?</li>
+                    <li>Are there any unnecessary comments that could be replaced with better naming?</li>
+                    <li>Is there any duplicated code that could be extracted?</li>
+                    <li>Would another developer understand this code easily?</li>
+                    <li>Will I understand this code in six months?</li>
+                </ul>
+
+                <div class="quote">
+                    <p>"Clean code is not written by following rules. It's written by experience and careful thought about what makes code readable and maintainable."</p>
+                </div>
+
+                <h2>Common Clean Code Mistakes I Made</h2>
+                <p>When I started programming, I made several mistakes:</p>
+                <ul>
+                    <li>Using single-letter variable names</li>
+                    <li>Writing functions that did multiple things</li>
+                    <li>Not formatting code consistently</li>
+                    <li>Writing comments that explained "what" instead of "why"</li>
+                    <li>Copy-pasting code instead of creating reusable functions</li>
+                </ul>
+
+                <h2>Conclusion</h2>
+                <p>Writing clean code is a skill that develops over time. It requires discipline and attention to detail, but the payoff is enormous.</p>
+
+                <p>Clean code shows maturity as a developer and makes you more valuable to any team. Start practicing clean coding habits today — your future self and teammates will thank you.</p>
+
+                <p>Remember: Code is read much more often than it is written. Make that reading experience pleasant and efficient for everyone, including yourself.</p>
+            </div>
+
+            <div class="blog-navigation">
+                <a href="blog4.html" class="nav-button"><i class="fas fa-arrow-left"></i> Previous Post</a>
+                <a href="blog6.html" class="nav-button">Next Post <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">© 2026 Evelyne Filloi. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
